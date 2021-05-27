@@ -166,7 +166,7 @@ while True:
     if ifProccessRun2():  # Если запущен Google Chrome
         duration = get_idle_duration()  # Считаем, сколько пользователь неактивен
         print('User idle for %.2f seconds.' % duration)  # Вывести информацию, сколько пользователь неактивен
-        if (duration >= 20):  # Если пользователь неактивен больше 2 минут (120 секунд)
+        if (duration >= 120):  # Если пользователь неактивен больше 2 минут (120 секунд)
             print('STOP')
             closeBrowserChrome()  # Закрыть браузер Google Chrome
             break  # Прервать цикл
